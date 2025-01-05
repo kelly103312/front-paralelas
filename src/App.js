@@ -53,23 +53,23 @@ function App() {
       <div className="container col-3 mt-5">
         <h2 className="text-center mb-4">Formulario de predicción</h2>
         <form onSubmit={handleSubmit}>
-            <div className="form-group mb-3" key="Largo_raiz">
-              <label htmlFor="Largo_raiz">  Largo de la raíz: </label>
+            <div className="form-group mb-3" key="Largo_sepalo">
+              <label htmlFor="Largo_sepalo">  Largo del sepalo: </label>
               <input
                 type="text"
-                id="Largo_raiz"
-                name="Largo_raiz"
+                id="Largo_sepalo"
+                name="Largo_sepalo"
                 onChange={handleChange}
                 required
                 className="form-control"
               />
             </div>
-            <div className="form-group mb-3" key="ancho_raiz">
-              <label htmlFor="ancho_raiz"> Ancho de la raíz:</label>
+            <div className="form-group mb-3" key="ancho_sepalo">
+              <label htmlFor="ancho_sepalo"> Ancho del sepalo:</label>
               <input
                 type="text"
-                id="ancho_raiz"
-                name="ancho_raiz"
+                id="ancho_sepalo"
+                name="ancho_sepalo"
                 onChange={handleChange}
                 required
                 className="form-control"
