@@ -37,8 +37,9 @@ function App() {
     };
 
     try {
-      const res = await axios.post("https://ec2-34-234-83-254.compute-1.amazonaws.com:8080/predict", data);
-      setResponse(res.data);
+      const res = await axios.post("http://ec2-52-91-222-99.compute-1.amazonaws.com:8080/predict", data);
+      console.log("data: " + res.data["prediction"])
+      setResponse(res.data["prediction"]);
       setError(null);
     } catch (err) {
       setError(err.message);
@@ -103,7 +104,7 @@ function App() {
 
         {response && (
           <div className="alert alert-success mt-4">
-            <h4>Respuesta del Servidor:</h4>
+            <h4>Resultado de la predicción: </h4>
             <pre>{JSON.stringify(response, null, 2)}</pre>
           </div>
         )}
