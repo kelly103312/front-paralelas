@@ -37,7 +37,7 @@ function App() {
     };
 
     try {
-      const res = await axios.post("http://ec2-52-91-222-99.compute-1.amazonaws.com:8080/predict", data);
+      const res = await axios.post("https://ec2-52-91-222-99.compute-1.amazonaws.com:8080/predict", data);
       console.log("data: " + res.data["prediction"])
       setResponse(res.data["prediction"]);
       setError(null);
